@@ -1,0 +1,80 @@
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(270deg, #8585d4, #800080, #d89ed5, #ffffff, #40e0d0, #d79891), #352386;
+    background-size: 300% 300%;
+    animation: gradientAnimation 30s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+#meinfoto {
+    display: block;
+    margin: auto;
+    width: 50%;
+    border: 5px solid #ADD8E6;
+    box-shadow: 0 0 20px #90EE90;
+    border-radius: 10px;
+}
+
+header {
+    background-color: #ADD8E6;
+    color: #fff;
+    border-bottom: 5px solid #90EE90;
+    transition: all 0.5s ease;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    transition: all 0.5s ease;
+}
+
+header nav ul li a:hover,
+header nav ul li a:focus {
+    background-color: #90EE90;
+    color: #333;
+    border-radius: 5px;
+}
+
+header nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #90EE90;
+    transition: width 0.5s ease;
+}
+
+header nav ul li a:hover::after,
+header nav ul li a:focus::after {
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #90EE90;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 0.8em;
+}

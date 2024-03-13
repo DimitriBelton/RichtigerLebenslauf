@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Die Reise meiner Karriere</title>
+    <link rel="stylesheet" type="text/css" href="indexstyles.css">
+    <style>
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Willkommen an Bord der Karriere!</h1>
+        <nav>
+            <ul>
+                <li><a href="about.html">Die Entdeckungsreise</a></li>
+                <li><a href="skills.html">Mein Navigationskit</a></li>
+                <li><a href="experience.html">Meine Expeditionen</a></li>
+                <li><a href="https://github.com/dimitribelton" target="_blank">Schatzkarte (GitHub)</a></li>
+                <li><a href="contact.html">Kontaktflaschenpost</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Herzlich Willkommen, Abenteurer!</h2>
+            <p>Hier beginnt die Reise durch meine beruflichen Qualifikationen und Erfahrungen. Packen Sie Ihren Entdeckergeist ein und kommen Sie mit auf diese spannende Reise!</p>
+            <img src="dimisfoto.jpg" alt="Dimi's Foto" id="dimisfoto">
+        </section>
+
+        <!-- Hier beginnt die Slideshow -->
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <img src="dimisbild1.jpg" style="width:30%">
+            </div>
+            <div class="mySlides">
+                <img src="dimisbild2.jpg" style="width:40%">
+            </div>
+            <div class="mySlides">
+                <img src="dimisbild3.jpg" style="width:50%">
+            </div>
+        </div>
+        <!-- Slideshow endet hier -->
+
+    </main>
+    <footer>
+        <p>© 2024 Die Reise meiner Karriere. Alle Rechte vorbehalten. Entworfen von Kapitän Dimitri Belton.</p>
+    </footer>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 2000); // Wechsel alle 2 Sekunden
+        }
+    </script>
+</body>
+</html>

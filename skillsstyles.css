@@ -1,8 +1,8 @@
 body {
-    font-family: 'Georgia', serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(270deg, #6a85b6, #6fbaaa, #bac8e0, #f3e6f5, #86c1b9, #ffddc1), #3a3d98;
+    background: linear-gradient(270deg, #7a91c2, #80c7b4, #c8d0e7, #f4e7f6, #96d1c3, #ffeed2), #4a4daa;
     background-size: 300% 300%;
     animation: gradientAnimation 30s ease infinite;
 }
@@ -13,76 +13,33 @@ body {
     100% { background-position: 0% 50%; }
 }
 
-/* Stil für die Fähigkeiten-Liste */
-ul.skills-list {
-    padding: 0;
-    list-style-type: none;
-}
-
-ul.skills-list li {
-    background-color: #f3f3f3;
-    margin: 10px 0;
-    padding: 10px;
-    border-left: 5px solid #98fb98; /* Aufgehellt für Konsistenz */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
 /* Header-Stil anpassen */
-header {
-    background-color: #b0e0e6; /* Aufgehellt für einen frischen Look */
-    color: #333;
-    border-bottom: 5px solid #98fb98; /* Aufgehellt für Konsistenz */
+.navbar {
+    background-color: #a0d0d6; /* Neue Farbe für einen einzigartigen Look */
+    color: #444;
+    border-bottom: 5px solid #a2d2a2; /* Neue Farbe für Konsistenz */
     transition: all 0.5s ease;
 }
 
-header nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-header nav ul li {
-    margin: 0 10px;
-}
-
-header nav ul li a {
+.navbar .nav-link {
     text-decoration: none;
-    color: #333;
-    padding: 5px 10px;
+    color: #444;
+    padding: 10px 15px;
     transition: all 0.5s ease;
 }
 
-header nav ul li a:hover,
-header nav ul li a:focus {
-    background-color: #98fb98; /* Aufgehellt für einen subtilen Effekt */
-    color: #333;
-    border-radius: 5px;
-}
-
-header nav ul li a::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 2px;
-    background-color: #98fb98; /* Aufgehellt für Konsistenz */
-    transition: width 0.5s ease;
-}
-
-header nav ul li a:hover::after,
-header nav ul li a:focus::after {
-    width: 100%;
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    background-color: #a2d2a2; /* Neue Farbe für einen subtilen Effekt */
+    color: #444;
+    border-radius: 8px;
 }
 
 /* Footer-Stil anpassen */
-footer {
+footer.footer {
     text-align: center;
-    background-color: #98fb98; /* Aufgehellt für einen frischen Look */
-    color: #333;
-    padding: 10px 0;
-    font-size: 0.8em;
+    background-color: #a2d2a2; /* Neue Farbe für einen einzigartigen Look */
+    color: #444;
+    padding: 15px 0;
+    font-size: 0.85em;
 }

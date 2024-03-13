@@ -4,38 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meine Fähigkeiten - Die Reise meiner Karriere</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="skillsstyles.css">
 </head>
 <body>
-    <header>
-        <h1>Meine Fähigkeiten</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Startseite</a></li>
-                <li><a href="about.html">Die Entdeckungsreise</a></li>
-                <li><a href="skills.html">Mein Navigationskit</a></li>
-                <li><a href="experience.html">Meine Expeditionen</a></li>
-                <li><a href="https://github.com/dimitribelton" target="_blank">Schatzkarte (GitHub)</a></li>
-                <li><a href="contact.html">Kontaktflaschenpost</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Meine Fähigkeiten</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Startseite</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">Die Entdeckungsreise</a></li>
+                <li class="nav-item"><a class="nav-link" href="skills.html">Mein Navigationskit</a></li>
+                <li class="nav-item"><a class="nav-link" href="experience.html">Meine Expeditionen</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://github.com/dimitribelton" target="_blank">Schatzkarte (GitHub)</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Kontaktflaschenpost</a></li>
             </ul>
-        </nav>
-    </header>
-    <main>
+        </div>
+    </nav>
+    <main class="container mt-5">
         <section>
-            <h2>Willkommen zu meinen Fähigkeiten!</h2>
+            <h2 class="mb-4">Willkommen zu meinen Fähigkeiten!</h2>
             <p>Hier präsentiere ich Ihnen eine Auswahl meiner beruflichen Fähigkeiten und Kompetenzen. Tauchen Sie ein in die Welt meiner technischen und sozialen Fertigkeiten.</p>
-            <!-- Hier können Sie Ihre Fähigkeiten in Listen oder Tabellen darstellen -->
-            <ul>
-                <li>Programmiersprachen: HTML, CSS, JavaScript</li>
-                <li>Frameworks und Bibliotheken: React, Angular, Node.js</li>
-                <li>Softwareentwicklung: Agile Methoden, Test-Driven Development</li>
-                <li>Kommunikation: Präsentationsfähigkeit, Teamarbeit, Konfliktlösung</li>
-            </ul>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Programmiersprachen</h5>
+                    <p class="card-text">HTML, CSS, JavaScript</p>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Frameworks und Bibliotheken</h5>
+                    <p class="card-text">React, Angular, Node.js</p>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Softwareentwicklung</h5>
+                    <p class="card-text">Agile Methoden, Test-Driven Development</p>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Kommunikation</h5>
+                    <p class="card-text">Präsentationsfähigkeit, Teamarbeit, Konfliktlösung</p>
+                </div>
+            </div>
         </section>
-        <!-- Hier können Sie weitere Inhalte oder Abschnitte hinzufügen -->
     </main>
-    <footer>
-        <p>© 2024 Meine Fähigkeiten - Die Reise meiner Karriere. Alle Rechte vorbehalten. Entworfen von Dimitri Belton.</p>
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+            <span class="text-muted">© 2024 Meine Fähigkeiten - Die Reise meiner Karriere. Alle Rechte vorbehalten. Entworfen von Dimitri Belton.</span>
+        </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>

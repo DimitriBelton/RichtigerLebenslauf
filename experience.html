@@ -4,38 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meine Expeditionen - Die Reise meiner Karriere</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="experiencestyles.css">
 </head>
 <body>
-    <header>
-        <h1>Meine Expeditionen</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Startseite</a></li>
-                <li><a href="about.html">Die Entdeckungsreise</a></li>
-                <li><a href="skills.html">Mein Navigationskit</a></li>
-                <li><a href="experience.html">Meine Expeditionen</a></li>
-                <li><a href="https://github.com/dimitribelton" target="_blank">Schatzkarte (GitHub)</a></li>
-                <li><a href="contact.html">Kontaktflaschenpost</a></li>
+    <header class="navbar navbar-expand-lg navbar-light bg-light">
+        <h1 class="navbar-brand">Meine Expeditionen</h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Startseite</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">Die Entdeckungsreise</a></li>
+                <li class="nav-item"><a class="nav-link" href="skills.html">Mein Navigationskit</a></li>
+                <li class="nav-item"><a class="nav-link" href="experience.html">Meine Expeditionen</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://github.com/dimitribelton" target="_blank">Schatzkarte (GitHub)</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Kontaktflaschenpost</a></li>
             </ul>
-        </nav>
+        </div>
     </header>
-    <main>
+    <main class="container mt-5">
         <section>
-            <h2>Willkommen zu meinen Expeditionen!</h2>
+            <h2 class="mb-4">Willkommen zu meinen Expeditionen!</h2>
             <p>Hier präsentiere ich Ihnen eine Chronik meiner beruflichen Expeditionen und Erfahrungen. Entdecken Sie die Stationen meiner Karriere.</p>
-            <!-- Hier können Sie Ihre beruflichen Erfahrungen in Listen oder Tabellen darstellen -->
-            <ul>
-                <li>Position: Frontend-Entwickler bei XYZ</li>
-                <li>Projekt: Entwicklung einer Webanwendung mit React</li>
-                <li>Aufgabe: Leitung des Design-Teams</li>
-                <li>Erfolg: Steigerung der Nutzerzufriedenheit um 20%</li>
-            </ul>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Ausbildung bei Techstarter</h5>
+                    <p class="card-text">Spezialist für Cloud- und Webentwicklung</p>
+                </div>
+            </div>
         </section>
-        <!-- Hier können Sie weitere Inhalte oder Abschnitte hinzufügen -->
     </main>
-    <footer>
-        <p>© 2024 Meine Expeditionen - Die Reise meiner Karriere. Alle Rechte vorbehalten. Entworfen von Dimitri Belton.</p>
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+            <span class="text-muted">© 2024 Meine Expeditionen - Die Reise meiner Karriere. Alle Rechte vorbehalten. Entworfen von Dimitri Belton.</span>
+        </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -5,6 +5,7 @@ body {
     background: linear-gradient(270deg, #8585d4, #800080, #d89ed5, #ffffff, #40e0d0, #d79891), #352386;
     background-size: 300% 300%;
     animation: gradientAnimation 30s ease infinite;
+    color: #333; /* Ändert die Textfarbe */
 }
 
 @keyframes gradientAnimation {
@@ -16,70 +17,39 @@ body {
 #dimisfoto {
     display: block;
     margin: auto;
-    width: 50%;
+    width: 100px; /* Ändert die Bildbreite auf 40px */
     border: 5px solid #ADD8E6;
     box-shadow: 0 0 20px #90EE90;
     border-radius: 10px;
 }
 
-header {
-    background-color: #ADD8E6;
-    color: #fff;
-    border-bottom: 5px solid #90EE90;
-    transition: all 0.5s ease;
+.navbar {
+    background-color: #ADD8E6; /* Ändert die Hintergrundfarbe der Navigationsleiste */
+    color: #fff; /* Ändert die Textfarbe der Navigationsleiste */
+    border-bottom: 5px solid #90EE90; /* Ändert die Farbe der unteren Grenze der Navigationsleiste */
 }
 
-header nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-    position: relative;
-}
-
-header nav ul li a {
+.navbar-nav .nav-link {
     text-decoration: none;
-    color: #fff;
-    padding: 5px 10px;
-    transition: all 0.5s ease;
+    color: #fff; /* Ändert die Textfarbe der Navigationslinks */
+    font-size: 14px; /* Verkleinert die Schriftgröße der Navigationslinks */
 }
 
-header nav ul li a:hover,
-header nav ul li a:focus {
-    background-color: #90EE90;
-    color: #333;
-    border-radius: 5px;
-}
-
-header nav ul li a::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #90EE90;
-    transition: width 0.5s ease;
-}
-
-header nav ul li a:hover::after,
-header nav ul li a:focus::after {
-    width: 100%;
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    background-color: #90EE90; /* Ändert die Hintergrundfarbe der Navigationslinks beim Überfahren oder Fokussieren */
+    color: #333; /* Ändert die Textfarbe der Navigationslinks beim Überfahren oder Fokussieren */
 }
 
 footer {
     text-align: center;
     margin-top: 20px;
-    background-color: #90EE90;
-    color: #fff;
+    background-color: #90EE90; /* Ändert die Hintergrundfarbe der Fußzeile */
+    color: #fff; /* Ändert die Textfarbe der Fußzeile */
     padding: 10px 0;
     font-size: 0.8em;
 }
 
-/* Neue Stile hinzufügen */
 .main-content {
     padding: 20px;
     color: #333;
@@ -97,7 +67,6 @@ footer {
     line-height: 1.6;
 }
 
-/* Stil für Listen anpassen */
 ul {
     list-style-type: none;
     padding: 0;

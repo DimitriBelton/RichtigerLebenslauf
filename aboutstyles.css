@@ -5,6 +5,7 @@ body {
     background: linear-gradient(270deg, #8585d4, #800080, #d89ed5, #ffffff, #40e0d0, #d79891), #352386;
     background-size: 300% 300%;
     animation: gradientAnimation 30s ease infinite;
+    line-height: 1.6; /* Verbessert die Lesbarkeit des Textes */
 }
 
 @keyframes gradientAnimation {
@@ -22,52 +23,27 @@ body {
     border-radius: 10px;
 }
 
-header {
+.navbar {
     background-color: #ADD8E6;
     color: #fff;
     border-bottom: 5px solid #90EE90;
     transition: all 0.5s ease;
+    padding: 20px 0; /* Fügt vertikale Polsterung hinzu */
 }
 
-header nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-    position: relative;
-}
-
-header nav ul li a {
+.navbar-nav .nav-link {
     text-decoration: none;
     color: #fff;
     padding: 5px 10px;
     transition: all 0.5s ease;
+    font-size: 18px; /* Vergrößert die Schriftgröße */
 }
 
-header nav ul li a:hover,
-header nav ul li a:focus {
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
     background-color: #90EE90;
     color: #333;
     border-radius: 5px;
-}
-
-header nav ul li a::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #90EE90;
-    transition: width 0.5s ease;
-}
-
-header nav ul li a:hover::after,
-header nav ul li a:focus::after {
-    width: 100%;
 }
 
 footer {
@@ -77,4 +53,5 @@ footer {
     color: #fff;
     padding: 10px 0;
     font-size: 0.8em;
+    padding: 20px 0; /* Fügt vertikale Polsterung hinzu */
 }

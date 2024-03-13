@@ -6,107 +6,38 @@ body {
     background-blend-mode: overlay;
     background-size: 300% 300%;
     animation: gradientAnimation 30s ease infinite;
+    color: #333; /* Ändert die Textfarbe */
 }
 
-@keyframes gradientAnimation {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+.navbar {
+    background-color: #ADD8E6; /* Ändert die Hintergrundfarbe der Navigationsleiste */
+    color: #fff; /* Ändert die Textfarbe der Navigationsleiste */
+    border-bottom: 5px solid #90EE90; /* Ändert die Farbe der unteren Grenze der Navigationsleiste */
 }
 
-header {
-    background-color: #ADD8E6;
-    color: #fff;
-    border-bottom: 5px solid #90EE90;
-    transition: all 0.5s ease;
+.navbar-nav .nav-link {
+    color: #fff; /* Ändert die Textfarbe der Navigationslinks */
 }
 
-header nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-    position: relative;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    padding: 5px 10px;
-    transition: all 0.5s ease;
-}
-
-header nav ul li a:hover,
-header nav ul li a:focus {
-    background-color: #90EE90;
-    color: #333;
-    border-radius: 5px;
-}
-
-header nav ul li a::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #90EE90;
-    transition: width 0.5s ease;
-}
-
-header nav ul li a:hover::after,
-header nav ul li a:focus::after {
-    width: 100%;
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    background-color: #90EE90; /* Ändert die Hintergrundfarbe der Navigationslinks beim Überfahren oder Fokussieren */
+    color: #333; /* Ändert die Textfarbe der Navigationslinks beim Überfahren oder Fokussieren */
 }
 
 footer {
-    text-align: center;
-    margin-top: 20px;
-    background-color: #90EE90;
-    color: #fff;
-    padding: 10px 0;
-    font-size: 0.8em;
+    background-color: #90EE90; /* Ändert die Hintergrundfarbe der Fußzeile */
+    color: #fff; /* Ändert die Textfarbe der Fußzeile */
 }
 
 form {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background: linear-gradient(to right, #000000, #c0c0c0);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-form label {
-    display: block;
-    margin-bottom: 5px;
-    color: #f0f0f0;
-}
-
-form input[type="text"],
-form input[type="email"],
-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    background: linear-gradient(to right, #000000, #c0c0c0); /* Ändert den Hintergrundverlauf des Formulars */
 }
 
 form input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    background-color: #90EE90;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    background-color: #90EE90; /* Ändert die Hintergrundfarbe der Schaltfläche "Senden" */
 }
 
 form input[type="submit"]:hover {
-    background-color: #80e080;
+    background-color: #80e080; /* Ändert die Hintergrundfarbe der Schaltfläche "Senden" beim Überfahren */
 }
